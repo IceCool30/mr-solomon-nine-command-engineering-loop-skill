@@ -115,6 +115,36 @@ These rules travel with the skill to every codebase:
 
 ---
 
+## Prompt improvement before action
+
+Before starting any stage, apply these checks. They only intervene when the input is incomplete or ambiguous.
+
+1. **Explicit assumption surface**  
+   List the assumptions being made from the prompt. If any assumption is load-bearing and not confirmed, stop and ask.
+
+2. **Missing-success-criteria check**  
+   If the user has not defined what “done” looks like, ask for it. Do not invent acceptance criteria.
+
+3. **Ambiguity gate**  
+   When the request contains vague words (“better”, “improve”, “nice”, “modern”, “clean”, “professional”, “make it good”), treat them as incomplete. Ask for concrete meaning or examples.
+
+4. **Scope boundary**  
+   Restate the exact scope the agent is about to work on. If the prompt could be read more broadly than intended, confirm the narrower reading first.
+
+5. **No silent invention**  
+   If a required detail is missing (audience, constraints, platform, data source, edge cases), do not invent it. Ask once, clearly.
+
+6. **Decision inventory**  
+   Before `/develop` or `/architect`, list every open technical decision the prompt still leaves unresolved. Hand unresolved decisions to `/architect` instead of guessing.
+
+7. **Prompt-to-spec translation**  
+   When a user prompt is high-level, force an intermediate step: turn it into a short, numbered list of verifiable requirements before any code or design is produced.
+
+8. **“What would make this fail?” check**  
+   For any non-trivial task, surface the most likely way the request could be misunderstood or fail, then address that risk before proceeding.
+
+---
+
 ## Command Protocols (Summary)
 
 | Command      | Verb    | Primary Job                                      | Key Output                          |

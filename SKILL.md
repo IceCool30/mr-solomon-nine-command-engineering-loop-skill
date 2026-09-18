@@ -64,11 +64,23 @@ Every explanation, PR description, commit message, changelog, documentation, arc
 
 Generic filler destroys credibility. The agent must never introduce the following:
 
-- **No generic icons**: Every icon must have a direct functional meaning tied to the domain (download arrow, lock, branch, etc.). Never use sparkles, random stars, lightbulbs, or abstract decorative shapes that carry no operational meaning.
-- **No generic taglines**: Avoid empty phrases such as "Empowering your workflow", "The all-in-one solution", "Built for the future". State the exact capability, audience, or operational truth.
-- **No generic captions**: Captions must explain specific data points, states, or relationships. Never write "Screenshot of dashboard" or "Feature image".
-- **No generic explainers or tips**: Tips and callouts must contain genuine non-obvious domain knowledge, edge-case warnings, or performance implications. If there is nothing non-obvious to say, omit the tip entirely. Never write "Tip: Click the button to proceed".
-- **No generic subheadlines**: Subheadlines must convey concrete facts, scopes, technical bounds, or verified outcomes. Never use vague corporate marketing prose.
+**Original five**
+- No generic icons, taglines, captions, explainers/tips, or subheadlines.
+
+**Additional enforced rules**
+- No fake enthusiasm or cheerleading ("Awesome!", "Great question!", "This is a game-changer").
+- No empty intensifiers ("incredibly powerful", "highly robust", "best-in-class").
+- No corporate filler openers ("In today's fast-paced world…").
+- No unsupported absolute claims ("guarantees", "100% secure", "zero downtime") without evidence.
+- No invented metrics or vague benefit statements that could apply to any product.
+- No residual placeholder copy ("Lorem ipsum", "Your content here").
+- No generic component names (`CustomButton`, `FeatureCard`, `MainContainer`).
+- No comment noise that merely restates the next line of code.
+- No silent invention of requirements, edge cases, or architectural choices.
+- No premature "Done" declarations before verification and tests pass.
+- No request-echo responses that simply repeat what the user asked.
+
+Full detail lives in `references/voice-and-brand-standards.md`.
 
 ### 3. Brand & Visual Experience Standards (Any Project)
 

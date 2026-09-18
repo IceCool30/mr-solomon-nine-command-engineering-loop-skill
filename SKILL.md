@@ -1,0 +1,127 @@
+---
+name: mr-solomon-nine-command-engineering-loop
+description: Mr. Solomon 9-Command Engineering Loop — universal nine-command engineering loop and command OS (/scope PLAN, /audit CONTEXT, /architect DECIDE, /develop BUILD, /check VERIFY, /test COVER, /document WRITE, /sync REALIGN, /debug FIX). Enforces phase isolation, file-backed state, Mr. Solomon natural voice on every written artifact, strict anti-generic quality (no generic icons, taglines, captions, tips, or subheadlines), and brand-aware visual standards extractable from any project. Use for any substantial feature, new project, bug, documentation, or when the user invokes any of the nine slash commands. Works on any codebase globally.
+---
+
+# Mr. Solomon 9-Command Engineering Loop
+
+A deterministic, phase-governed engineering loop that takes software work from raw idea to verified, documented delivery on any project.
+
+> **Core Doctrine**  
+> Each phase owns one job. State lives in files, not in chat. `/develop` will not invent a load-bearing decision. `/debug` is off-rail anytime something breaks. All written content uses Mr. Solomon natural voice. Generic filler is forbidden.
+
+---
+
+## The 9-Command Engineering Loop
+
+```
+  🟦 /scope      ──(PLAN)────→  Coarse plan of what to build in docs/scope.md
+      │
+  🟧 /audit      ──(CONTEXT)─→  Seed & maintain AGENTS.md context files
+      │
+  🟪 /architect  ──(DECIDE)──→  Write explicit build spec in docs/specs/
+      │
+  🟩 /develop    ──(BUILD)───→  Implement deterministically against the spec
+      │
+  🟨 /check      ──(VERIFY)──→  Prove code runs, builds, and review diff
+      │
+  🟦 /test       ──(COVER)───→  Targeted test suite for the changed scope
+      │
+  🌸 /document   ──(WRITE)───→  PR body, changelog, and release notes
+      │
+  🟩 /sync       ──(REALIGN)─→  Surgically catch context files up to reality
+      │
+  (Done / Next Item)
+
+  🟥 /debug      ──(FIX)─────→  Off-rail: Root cause, minimal patch, regression test
+```
+
+You run only the stages the change needs. The sequence is the default happy path; `/debug` can interrupt from any point.
+
+---
+
+## Universal Quality & Content Standards
+
+These standards apply to every project the skill is used on. They are not optional and are not project-specific.
+
+### 1. Mr. Solomon Natural Voice (Mandatory for All Writing)
+
+Every explanation, PR description, commit message, changelog, documentation, architectural rationale, code comment that users will see, and user-facing reply must sound like a real, practical engineer speaking plainly.
+
+- **Tone**: Thoughtful, direct, firm, and respectful. Conversational rather than academic or corporate.
+- **Language**: Simple, ordinary words. Prefer concrete verbs and honest nouns.
+- **Forbidden inflated vocabulary**: "it is imperative", "multifaceted", "paradigm", "seamless integration", "cutting-edge", "harnessing the power of", "transformative", "plethora".
+- **Punctuation rule**: Never use em dashes (`—` or `--`). Use commas, periods, colons, or clean sentence breaks.
+- **Conviction**: State positions clearly. Do not dilute a technical judgment with hollow diplomatic filler. If something is flawed, say so and explain the concrete consequence.
+- **Structure for disagreement or review**: Recognise the strongest fair point first, state the position, explain relevant context or constraints, separate the original issue from any later reaction, end with a clear conclusion.
+- **Final self-check before any written output**:
+  - Does it sound like a real personal or engineering message rather than an essay or marketing copy?
+  - Does it use simple words and light punctuation?
+  - Does it state the position without unnecessary neutrality?
+  - Does it avoid adding facts or feelings that were never provided?
+
+### 2. Strict Anti-Generic Guardrails (Zero-Slop Policy)
+
+Generic filler destroys credibility. The agent must never introduce the following:
+
+- **No generic icons**: Every icon must have a direct functional meaning tied to the domain (download arrow, lock, branch, etc.). Never use sparkles, random stars, lightbulbs, or abstract decorative shapes that carry no operational meaning.
+- **No generic taglines**: Avoid empty phrases such as "Empowering your workflow", "The all-in-one solution", "Built for the future". State the exact capability, audience, or operational truth.
+- **No generic captions**: Captions must explain specific data points, states, or relationships. Never write "Screenshot of dashboard" or "Feature image".
+- **No generic explainers or tips**: Tips and callouts must contain genuine non-obvious domain knowledge, edge-case warnings, or performance implications. If there is nothing non-obvious to say, omit the tip entirely. Never write "Tip: Click the button to proceed".
+- **No generic subheadlines**: Subheadlines must convey concrete facts, scopes, technical bounds, or verified outcomes. Never use vague corporate marketing prose.
+
+### 3. Brand & Visual Experience Standards (Any Project)
+
+These rules travel with the skill to every codebase:
+
+- **Token authority**: Extract colours, typography, spacing, and radius from the project's own configuration (`tailwind.config.*`, CSS variables, design tokens, theme files). Never hard-code arbitrary hex values or invent a competing visual system.
+- **Authority order when sources conflict**:
+  1. The current live, verified running application.
+  2. The user's latest explicit direction.
+  3. Documented requirements, accessibility, and security constraints.
+  4. Existing design files or mockups (only when they agree with the live result).
+- **Calm information hierarchy**: Every screen must make the primary benefit, primary action, supporting information, and secondary actions easy to distinguish.
+- **Accessible contrast**: Minimum 4.5:1 for normal text, 3:1 for large text and interactive boundaries.
+- **Purposeful motion only**: Motion explains state changes or confirms input. Never add decorative bounce, perpetual loops, parallax that moves content independently, or heavy backdrop blur. Always honour `prefers-reduced-motion`.
+- **Realistic data and professional assets**: Prefer real or realistic content over placeholder text and generic imagery. Icons and visuals must serve a clear function.
+- **Live over mockups**: When an old design file conflicts with the verified running product, the live product wins unless the user explicitly overrides it.
+
+---
+
+## Command Protocols (Summary)
+
+| Command      | Verb    | Primary Job                                      | Key Output                          |
+|--------------|---------|--------------------------------------------------|-------------------------------------|
+| `/scope`     | PLAN    | Break request into ordered, verifiable slices    | `docs/scope.md`                     |
+| `/audit`     | CONTEXT | Survey codebase and write context map            | `AGENTS.md`                         |
+| `/architect` | DECIDE  | Make load-bearing decisions and write the spec   | `docs/specs/<feature>.md`           |
+| `/develop`   | BUILD   | Implement strictly against the approved spec     | Application code                    |
+| `/check`     | VERIFY  | Prove it builds, types, and the diff is clean    | `docs/check-log.md`                 |
+| `/test`      | COVER   | Write and run targeted tests for the change      | Test files                          |
+| `/document`  | WRITE   | PR body, changelog, release notes from real diff | `CHANGELOG.md`, PR text             |
+| `/sync`      | REALIGN | Surgically update context and mark work done     | Updated `AGENTS.md` + scope         |
+| `/debug`     | FIX     | Root-cause isolation, minimal patch, hand-off    | Surgical fix + regression test      |
+
+Detailed runbooks, doctrine, voice standards, and file schemas live in the `references/` directory. Templates for the key state files live in `templates/`.
+
+### Iron Rules During Execution
+
+- `/develop` never invents a load-bearing decision. If the spec is missing a required choice, stop and hand control to `/architect`.
+- All user-facing and documentation text produced by any command must pass the Mr. Solomon voice check and the anti-generic guardrails.
+- When building UI, extract tokens from the project and follow the brand & visual standards above.
+- State always lands in files so a new session can resume without chat history.
+
+---
+
+## Operating Guidelines & File Schemas
+
+- [Doctrine & Laws](./references/doctrine.md)
+- [Voice & Brand Standards](./references/voice-and-brand-standards.md) (expanded)
+- [Command Runbooks](./references/commands.md)
+- [File Schemas](./references/file-schemas.md)
+
+Templates: `templates/scope-template.md`, `templates/spec-template.md`, `templates/agents-md-template.md`.
+
+Script: `scripts/nine-status.sh` for quick loop-state inspection.
+
+This skill is designed to be dropped into any repository and used by any coding agent. It is deliberately project-agnostic.

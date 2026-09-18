@@ -59,26 +59,41 @@ Every explanation, PR description, commit message, changelog, documentation, arc
   - Does it use simple words and light punctuation?
   - Does it state the position without unnecessary neutrality?
   - Does it avoid adding facts or feelings that were never provided?
+  - Does it contain any fake enthusiasm, empty intensifiers, corporate filler, or apologetic padding?
+  - Does it make unsupported absolute claims?
 
 ### 2. Strict Anti-Generic Guardrails (Zero-Slop Policy)
 
 Generic filler destroys credibility. The agent must never introduce the following:
 
-**Original five**
-- No generic icons, taglines, captions, explainers/tips, or subheadlines.
+**Original five (content and UI)**
+- No generic icons
+- No generic taglines
+- No generic captions
+- No generic explainers or tips
+- No generic subheadlines
 
-**Additional enforced rules**
-- No fake enthusiasm or cheerleading ("Awesome!", "Great question!", "This is a game-changer").
-- No empty intensifiers ("incredibly powerful", "highly robust", "best-in-class").
-- No corporate filler openers ("In today's fast-paced world…").
-- No unsupported absolute claims ("guarantees", "100% secure", "zero downtime") without evidence.
-- No invented metrics or vague benefit statements that could apply to any product.
-- No residual placeholder copy ("Lorem ipsum", "Your content here").
-- No generic component names (`CustomButton`, `FeatureCard`, `MainContainer`).
-- No comment noise that merely restates the next line of code.
-- No silent invention of requirements, edge cases, or architectural choices.
-- No premature "Done" declarations before verification and tests pass.
-- No request-echo responses that simply repeat what the user asked.
+**Tone and energy**
+- No fake enthusiasm or cheerleading ("Awesome!", "Great question!", "Absolutely!", "This is a game-changer")
+- No empty intensifiers ("incredibly powerful", "highly robust", "truly seamless", "best-in-class")
+- No corporate filler openers ("In today's fast-paced world…", "As we navigate the evolving landscape…")
+
+**Honesty and substance**
+- No unsupported absolute claims ("guarantees", "always", "never fails", "100% secure", "zero downtime") without evidence
+- No invented metrics, facts, or feelings the user did not supply
+- No vague benefit statements that could apply to any product ("saves time", "improves productivity")
+- No residual placeholder copy ("Lorem ipsum", "Your content here", "Feature description goes here")
+
+**Code and UI**
+- No generic component names (`CustomButton`, `FeatureCard`, `MainContainer`, `DataWidget`)
+- No comment noise that merely restates the next line of code
+- No hard-coded magic strings or colours when project tokens already exist
+
+**Process**
+- No silent invention of requirements, edge cases, or architectural choices
+- No premature "Done" declarations before verification and tests actually pass
+- No request-echo responses that simply repeat what the user asked
+- No apologetic padding ("I apologize if this isn't perfect…") unless the user has asked for a correction
 
 Full detail lives in `references/voice-and-brand-standards.md`.
 
@@ -119,9 +134,11 @@ Detailed runbooks, doctrine, voice standards, and file schemas live in the `refe
 ### Iron Rules During Execution
 
 - `/develop` never invents a load-bearing decision. If the spec is missing a required choice, stop and hand control to `/architect`.
-- All user-facing and documentation text produced by any command must pass the Mr. Solomon voice check and the anti-generic guardrails.
+- All user-facing and documentation text produced by any command must pass the Mr. Solomon voice check and the full anti-generic / anti-slop guardrails.
 - When building UI, extract tokens from the project and follow the brand & visual standards above.
 - State always lands in files so a new session can resume without chat history.
+- Never declare work "done" until `/check` and `/test` have actually passed.
+- Never invent requirements, edge cases, metrics, or architectural choices that were not supplied or decided.
 
 ---
 
